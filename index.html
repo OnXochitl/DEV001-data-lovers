@@ -10,7 +10,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Estudio Ghibli</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
@@ -21,35 +21,24 @@
     <header>
       <h1>Estudio Ghibli</h1>
       <nav>
-        <div class="menuLeft">
-            <img src="./img/home.png" alt="Home">
-            <a href="index.html">Home</a>      
-            <img src="./img/producers.png" alt="Producers">   
-            <a href="producers.html">Producers</a>
-            <img src="./img/aboutUs.png" alt="About Us">
-            <a href="#">About Us</a>
-        </div>
-        <div class="menuRight">
-          <img src="./img/singIn.png" alt="Sign In">
-          <a href="#">Sign in</a>
+        <div class="menuLeft" id="menuLeft">
+            <a href="index.html"><img src="./img/home.png" alt="Home"> Home </a>         
+            <a href="producers.html"><img src="./img/producers.png" alt="Producers"> Producers</a>
+            <a href="#"><img src="./img/aboutUs.png" alt="About Us"> About Us</a>
+            <a  class="menuLeft__Hamburger" id = "hamburgerIcon"><img src="./img/hamburger.png" alt="hamburgerIcon"></a>
         </div>
       </nav>
     </header>
-    <section>
-      <h1>Bienvenidos a Estudio Ghibli</h1>
-      <p>Donde encontrarás quienes y cuántos productores/directores hay involucrados,</p>
-      <p>cuántas y cuáles películas ha realizado,</p>
-      <p>qué película es mejor según la audiencia;</p>
-      <p>y mucho más</p>
+    <section class="section">
+      <h1 class="section__title">Bienvenidos a Estudio Ghibli</h1>
+      <div class="section__description">Estudio Ghibli es un estudio japonés de animación, considerado por la crítica especializada como uno de los mejores estudios de animación del mundo en la actualidad.</div>
+      <div class="section__description">Aquí encontrarás información sobre: quienes y cuántos productores/directores hay involucrados, cuántos y cuáles ánimes se han realizado, qué ánimes son mejores según la audiencia; y mucho más.</div>
     </section>
     <footer class="footer">
-      <a href="#">Info</a>
-      <a href="#">Support</a>
-      <a href="#">Marketing</a>
-      <a href="#">Terms of Use</a>
-      <a href="#">Privacy Policy</a>
+      <p>Copyright © 2022</p>
     </footer>
   </div>
+  <script src="main.js" type="module"></script>
 </body>
 
 </html>

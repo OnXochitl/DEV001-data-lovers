@@ -4,6 +4,9 @@
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mingzat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" href="./img/totoro.png">
     <link rel="icon" href="totoro.ico">
@@ -21,31 +24,21 @@
         <header>
             <h1>Estudio Ghibli</h1>
             <nav>
-              <div class="menuLeft">
-               <img src="./img/home.png" alt="Home">
-                <a href="index.html">Home</a>      
-                <img src="./img/producers.png" alt="Producers">   
-                <a href="producers.html">Producers</a>
-                <img src="./img/aboutUs.png" alt="About Us">
-                <a href="#">About Us</a>
-            </div>
-            <div class="menuRight">
-              <img src="./img/singIn.png" alt="Sign In">
-              <a href="#">Sign in</a>
-            </div>
+                <div class="menuLeft" id="menuLeft">
+                    <a href="index.html"><img src="./img/home.png" alt="Home"> Home </a>         
+                    <a href="producers.html"><img src="./img/producers.png" alt="Producers"> Producers</a>
+                    <a href="#"><img src="./img/aboutUs.png" alt="About Us"> About Us</a>
+                    <a  class="menuLeft__Hamburger" id = "hamburgerIcon"><img src="./img/hamburger.png" alt="hamburgerIcon"></a>
+                </div>
             </nav>
           </header>
         <section >
-            <h1>Producers</h1>
+            <h1 class="section__title">Producers</h1>
             <div class="producers">
             </div>
         </section>
         <footer class="footer">
-            <a href="#">Info</a>
-            <a href="#">Support</a>
-            <a href="#">Marketing</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>     
+            <p>Copyright © 2022 </p>    
         </footer>
     </div>
     <script src="main.js" type="module"></script>
