@@ -23,20 +23,18 @@ header {
 }
 
 header h1 {
-  font-size: 80px;
-  padding-top: 135px;
-  padding-left: 40px;
-  padding-bottom: 30px;
+  font-size: 7vw;
+  padding-top: 7vw;
+  padding-left: 2vw;
+  padding-bottom: 1vw;
   background-color: #D99982;
 }
-
-
 
 .menuLeft a {
   text-decoration: none;
   color: #A68F97;
   background-color: #F2F2F2;
-  font-size: 50px;
+  font-size: 3vw;
   font-weight: 900;
   padding: 17px;
 }
@@ -48,16 +46,6 @@ header h1 {
 
 .menuLeft .menuLeft__Hamburger {
   display: none;
-}
-
-.producers div:hover {
-  background-color: #515a6c;
-  color: #FFFFFF;
-  text-shadow: none;
-  font-size: 50px;
-  width: 350px;
-  height: 250px;
-  transition: 1s;
 }
 
 nav{
@@ -81,51 +69,113 @@ nav{
 }
 
 a img {
-  height: 50px;
+  height: 3vw;
   background-color:transparent;
   vertical-align: middle;
 }
 
-section {
+.mainSection {
   padding: 150px;
   width: 100%;
   background-color: transparent;
   font-size: 40px;
   text-align: center;
   color: #D99982;
-
 }
 
+.mainSection__welcome, .mainSection__directors, .mainSection__producers, .mainSection__movies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 98%;
+  margin:auto;
+}
+
+.section__title {
+  font-size: 6vw;
+}
+
+.sort {
+  display: flex;
+  font-size: revert;
+}
+
+select {
+  font-size: xx-large;
+  border: 2px solid #D99982;
+}
 
 section h1 {
-  padding-bottom: 60px;
-  font-weight: 1200;
+  padding-bottom: 20px;
   font-size: 80px;
 }
 
-.section div {
+.section__description {
   margin-bottom: 30px;
 }
 
-
-.totoro {
-  position: fixed;
-  width: 13%;
-  bottom: 0;
-  right: 0;
-}
-
-
-.producers {
+.section__gContainer {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   background-color: #FFEAE2;
   padding: 50px;
+  }
+
+.gibliInfo, .movieInfo {
+  font-family: 'Mingzat', sans-serif;
+  width: 14vw;
+  height: 7vw;
+  color: #FFFFFF;
+  background-color: #DDD3E0;
+  text-align: center;
+  padding: 20px;
+  font-size: 100%;
+  text-shadow: 0 0 5px #A99AAD;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  border: 1px solid #FFFFFF;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.gibliInfo p {
+  font-size: 1.6vw;
+  margin: auto;
+  padding:5px;
+  max-width: 100%;
+  -webkit-text-stroke: 0.1px #A68F97;
+}
+
+.gibliInfo img {
+  padding:5px;
+  max-width: 100%;
   margin: auto;
 }
 
-.producers div {
+.gibliInfo:hover, .movieInfo:hover {
+  background-color: #515a6c;
+  color: #FFFFFF;
+  text-shadow: none;
+  font-size: 50px;
+  width: 270px;
+   transition: 1s;
+}
+
+.movieInfo {
+  height: auto;
+  margin-bottom: 80px;
+  display: block;
+}
+
+.movieInfo img {
+  width: 10vw;
+ }
+ 
+ .movieInfo:hover {
+  font-size: 40px;
+}
+
+.section__ghibliInfo img {
   font-family: 'Mingzat', sans-serif;
   width: 300px;
   height: 200px;
@@ -141,6 +191,113 @@ section h1 {
   border: 1px solid #FFFFFF;
 }
 
+.section__gContainer__buttonDiv {
+  margin-bottom: 70px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display: block;
+
+}
+
+.gibliInfo__rankingButton {
+  background-color: #D99982;
+  border: 1px solid #f2f2f2;
+  color: #f2f2f2;
+  padding: 0.5vw 1.2vw;
+  font-weight: 900;
+  font-size: 0.9vw;
+}
+
+.gibliInfo__rankingButton:hover {
+  background-color: #A68F97;
+  transition: 1s;
+}
+
+.modal-director, .modal-producer {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal__content-director, .modal__content-producer {
+  background-color: #F2F2F2;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal__content-director p, .modal__content-producer p {
+
+  color:#A99B95;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0% 5%;
+}
+
+.infoModal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8vw 8vw 8vw;
+}
+
+.infoModal img {
+  width: 15vw;
+}
+
+.infoModal p {
+font-size: 3vw;
+}
+
+.averageModalCard {
+  margin: 8vw 0;
+}
+
+.averageModalCard h1 {
+  font-size: 8vw;
+}
+
+.averageModalCard h6 {
+  font-size: 3vw;
+}
+
+/* The Close Button */
+.modal__close-producer, .modal__close-director  {
+  color: #aaaaaa;
+  font-size: 70px;
+  position: absolute;
+  right: 13%;
+  top: 110px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal__closeProducers:hover, .modal__closeDirectors:hover,
+.modal__closeProducers:focus, .modal__closeDirectors:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.rating {
+  font-size: 9vw;
+  background-color: #D99982;
+  color: #F2F2F2;
+  padding: 10% 2%;
+  width: 8vw;
+}
+
 .footer {
   padding: 20px;
   width: 100%;
@@ -154,15 +311,16 @@ section h1 {
   color: #FFEAE2;
 }
 
+.totoro {
+  position: fixed;
+  width: 13%;
+  bottom: 0;
+  right: 0;
+}
+
   @media screen and (max-width: 930px) {
     .menuLeft a:not(:first-child) {
       display: none;
-    }
-
-    .section__title {
-      font-size: 55px;
-      text-align: center;
-      margin: auto;
     }
 
     .section__description {
@@ -196,25 +354,34 @@ section h1 {
       text-align: left;
     }
 
-    .producers div {
+    .gibliInfo, .movieInfo {
       width: 170px;
-      height: 125px;
-      margin-bottom: 40px;
-      margin-left: 10px;
       font-size: 25px;
-    }
+     }
 
-    .producers div:hover {
-      font-size: 30px;
+     .gibliInfo p {
+      font-size: 1.5vw;
+     }
+
+     .movieInfo p {
+      font-size: 3vw
+     }
+
+     .movieInfo img {
+      width: 15vw;
+     }
+
+    .gibliInfo:hover, .movieInfo:hover {
+      font-size: 40px;
       width: 200px;
-      height: 150px;
     } 
+
   }
 
   @media screen and (max-width: 600px) {
-    .section__title {
-      font-size: 40px;
-      text-align: center;
+
+    .movieInfo:hover {
+      font-size: 20px;
     }
 
     .section__description {
