@@ -364,12 +364,24 @@ font-size: 3vw;
     }
 
     .mainSection {
-      padding: 80px;
+      padding: 12vw;
+    }
+
+    label {
+      font-size: 6vw;
+    }
+
+    select {
+      font-size: 5vw;
     }
     
     .gibliInfo {
-      width: 170px;
-      font-size: 25px;
+      width: 31vw;
+      height: 22.5vw;
+     }
+
+     .gibliInfo__rankingButton {
+      font-size: 3.5vw;
      }
 
      .movieInfo {
@@ -377,7 +389,8 @@ font-size: 3vw;
      }
 
      .gibliInfo p {
-      font-size: 1.5vw;
+      font-size: 5vw;
+      padding: 0;
      }
 
      .movieInfo p {
