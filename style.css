@@ -362,6 +362,10 @@ font-size: 3vw;
     a img {
       height: 6vw;
     }
+
+    .mainSection {
+      padding: 80px;
+    }
     
     .gibliInfo {
       width: 170px;
