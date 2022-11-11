@@ -81,10 +81,20 @@ export const averageFunction = (data, condition) => {
 });*/
 
 let sum = 0;
-  data.forEach(data => {
-    sum += parseInt(data[condition], 10);
+  data.forEach(info => {
+    sum += parseInt(info[condition], 10);
   });
      
 return (sum/data.length).toFixed(2);
 
 };
+
+
+/*let sum = 0;
+  data.reduce((previousValue, currentValue) => { 
+    previousValue + parseInt(currentValue.condition), sum
+  });
+     
+return (sum/data.length);
+
+};*/
